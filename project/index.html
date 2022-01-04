@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <meta charset="UTF-8">
+         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+         <link rel="stylesheet" href="styles.css">
+         <title>porfolio</title>
+     </head>
+     <body>
+        <div class="container">
+             <div class="navigations">
+                <div class="navigation">
+                    <div class="left-side">
+                       <div class="nav-item active-nav-item"><a href="index.html">home</a>
+                        </div>
+                        <div class="nav-item"><a href="page2.html">about</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="brand">DESTINED IBRAHIM</div>
+                        
+                    </div>
+
+                </div>
+            </div> 
+         
+           
+
+                <div class="portfolio-items-wrapper">
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(childern.jpg);">
+                        </div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="white-book-stack-icon-free-white-book-icons-book-white-png-256_256.png">
+                            </div>
+
+                            <div class="subtitle">Studied at Faith Academy</div>
+                        </div>
+                    </div>
+
+                
+
+                
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(books.jpg);">
+                        </div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="graduation hat.png">
+                            </div>
+
+                            <div class="subtitle">Studied Mechanical Engeneering at F.U.T Minna</div>
+                        </div>
+                    </div>
+
+               
+
+               
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(contact\ us.jpg);">
+                        </div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="593-transparent-background-phone-icon-white-11562889130j9sl4rmews.png">
+                            </div>
+
+                            <div class="subtitle">Contact Information</div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(ecommerce-business-blog-1.jpg);">
+                        </div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="17-white-snowflake-png-image.png">
+                            </div>
+
+                            <div class="subtitle">Likes to code</div>
+                        </div>
+                    </div>
+
+                
+
+                
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(school2.jpg);">
+                        </div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="87008-angle-business-food-house-white-line-thumb.png">
+                            </div>
+
+                            <div class="subtitle">Likes play</div>
+                        </div>
+                    </div>
+
+               
+
+               
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(work.jpg);">
+                        </div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="work.png">
+                            </div>
+
+                            <div class="subtitle">Would definatly like to work with you</div>
+                        </div>
+                    </div>
+
+        </div>   
+
+
+             
+        <footer><hr> developed by tim 08091142128</footer>
+
+
+
+     </body>
+     <script>
+         const portfolioitems = document.querySelectorAll('.portfolio-item-wrapper')
+
+         portfolioitems.forEach(portfolioitem => {
+             portfolioitem.addEventListener('mouseover', () => {
+                console.log(portfolioitem.childNodes[1].classList);
+                portfolioitem.childNodes[1].classList.add('img-darken');
+             })
+
+             portfolioitem.addEventListener('mouseout', () => {
+                console.log(portfolioitem.childNodes[1].classList);
+                portfolioitem.childNodes[1].classList.remove('img-darken');
+             })
+
+         })
+     </script>
+</html>

@@ -1,0 +1,21 @@
+/*body{
+    margin: 0;
+
+} */
+
+a{
+    color: aliceblue;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+a:hover{
+    color: aqua;
+    text-decoration: none;
+}
+
+ul{
+    background-color: black;
+    transition: color 0.5s;
+
+}

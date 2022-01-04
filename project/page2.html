@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <meta charset="UTF-8">
+         <link rel="stylesheet" href="styles.css">
+         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+         
+         <title>porfolio</title>
+     </head>
+     <body>
+        <div class="container">
+             <div class="navigations">
+                <div class="navigation">
+                    <div class="left-side">
+                       <div class="nav-item"><a href="index.html">home</a>
+                        </div>
+                        <div class="nav-item active-nav-item"><a href="page2.html">about</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="brand">TIMMY TIM'S CONCEPT</div>
+                        
+                    </div>
+
+                </div>
+            </div> 
+         
+        </div>
+
+        <div class="content-wrapper">
+            <div class="two-column-wrapper">
+                <div class="profile-img-wrapper">
+                    <img src="profile.jpg" alt="" style="height: 350px; width: auto;">
+                </div>
+
+
+                <div class="profile-content-wrapper">
+                    <h1>Thank you for visiting my site!</h1>
+                    <p>
+                        Building the most ideal and simple websites for efficiency.
+                    </p>
+                </div>
+            </div>
+        </div>
+              
+
+
+             
+        <footer><hr> developed by tim 08091142128</footer>
+
+
+
+     </body>
+     <script>
+         const portfolioitems = document.querySelectorAll('.portfolio-item-wrapper')
+
+         portfolioitems.forEach(portfolioitem => {
+             portfolioitem.addEventListener('mouseover', () => {
+                console.log(portfolioitem.childNodes[1].classList);
+                portfolioitem.childNodes[1].classList.add('img-darken');
+             })
+
+             portfolioitem.addEventListener('mouseout', () => {
+                console.log(portfolioitem.childNodes[1].classList);
+                portfolioitem.childNodes[1].classList.remove('img-darken');
+             })
+
+         })
+     </script>
+</html>

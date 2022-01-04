@@ -1,0 +1,144 @@
+/*master styles*/
+body{
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*navbar styles*/
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+
+}
+
+.left-side {
+    display: flex;
+
+}
+
+.nav-item{
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+
+}
+
+.nav-item a{
+    transition: border-bottom 0.5s;
+    border-bottom:1px solid transparent;
+
+}
+.nav-item a:hover{
+    border-bottom: 1px solid black;
+
+}
+a:hover{
+    color: black;
+
+}
+a{
+    text-decoration: none;
+    color: #8a8a8a;
+    transition: color 0.5s;
+}
+
+.active-nav-item {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-item a{
+    color: black !important;
+}
+
+/*portfolio styles*/
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+
+}
+
+.portfolio-img-background {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.logo-wrapper img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    color: transparent;
+    font-weight: 600;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color:aqua;
+    transition: color 0.5s;
+}
+
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+
+/*footer styles*/
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+/*About us*/
+
+.two-column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-img-wrapper{
+    width: 100%;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+h1{
+    color: black;
+}
